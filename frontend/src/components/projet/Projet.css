@@ -1,0 +1,153 @@
+
+  .projet{
+    width: 100%;
+    background-image:linear-gradient(360deg,black,rgba(0,0,0,0.8),black), url('projet.jpg');
+    color: aliceblue;
+  }
+
+  .projet-title{
+      text-align: center;
+      color: aqua;
+  }
+
+  .projet-list{
+      display: grid;
+      grid-template-columns: repeat(3,3fr);
+      grid-gap: 2rem;
+      justify-content: center;
+      padding: 2rem 5rem;
+  }
+
+  .cart{
+      width: 20rem;
+      height: 25rem;
+      background: rgba(0,0,0,0.5);
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card-img{
+    width: 20rem;
+    height: 15rem;
+      overflow: hidden;
+      flex-shrink: 0; /* Empêche de rétrécir */
+  }
+
+  .card-img img{
+      object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-size: cover; */
+  }
+
+  .card-content{
+      /* background-color: rgba(0, 0, 0, 0.7); Fond semi-transparent si tu veux */
+      color: #fff;
+      padding: 0.8rem;
+      margin-top: auto; /* Fait coller le contenu en bas du card */
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+
+  .card-content h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .card-content .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-content a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .card-content a:hover {
+    text-decoration: underline;
+  }
+
+  .link{
+    display: flex;
+    font-size: 1rem;
+    /* gap: 1rem; */
+    justify-content: space-between;
+  }
+
+
+
+@media (max-width:1020px){
+  .projet-title{
+     font-size: 200%; 
+  }
+
+  
+  
+  .projet-list{
+     
+      grid-template-columns: repeat(2,2fr);
+      grid-gap: 1rem;
+      padding: 2rem 5rem;
+  }
+
+  .cart{
+      width: 20rem;
+      height: 25rem;
+     
+  }
+
+  .card-img{
+    width: 20rem;
+    height: 15rem;
+   
+  }
+
+}
+
+@media (max-width: 800px){
+  .projet-list{
+     
+    grid-template-columns: repeat(2,2fr);
+    grid-gap: 1rem;
+    padding: 2rem 5rem;
+  }
+
+  .cart{
+      width: 15rem;
+      height: 20rem;
+     
+  }
+
+  .card-img{
+    width: 15rem;
+    height: 10rem;
+   
+  }
+
+  .link{
+  
+    font-size: .8rem;
+    flex-direction: column-reverse;
+    
+  }
+
+  .link a{
+    font-size: 120%;
+  }
+
+  .card-content h3, .card-content p{
+    font-size: 90%;
+    top: 0;
+  }
+
+}

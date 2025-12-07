@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "viva";
+    src: url("/fonts/VIVALDII.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "script";
+    src: url("/fonts/LBRITEDI.TTF") format("truetype");
+}
+
+
+.home{
+    /* background-color: rgb(0, 0, 0); */
+    background-image:linear-gradient(360deg,black,rgba(0,0,0,0.7),black), url('/1.jpg');
+    color: aliceblue;
+    width: 100%;
+    padding: 5rem 2rem 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+}
+
+.home .home-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    font-family: "script", sans-serif;
+
+}
+
+.home-photo{
+    width: 100%;
+    /* position: relative; */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-bloc{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+
+.photo-bloc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+
+.accueil{
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(90deg, #00f7ff, #6c09ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    font-family: "viva", sans-serif;
+}
+
+.accueil span{
+    font-size: 10rem;
+    padding-left: 0.5rem;
+    color: rgb(3, 236, 186);
+    
+}
+
+.present{
+    font-size: 1.5rem;
+
+}
+
+.present span{
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: rgb(3, 209, 236);
+}
+
+.job{
+    margin-top: 2rem;
+}
+
+.cv{
+    text-decoration: none;
+}
+
+.button{
+    background: rgb(3, 236, 186);
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    color: aliceblue;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover{
+    background: rgb(3, 182, 236);
+    transition: .7s;
+    
+}
+
+
+
+/* responsive */
+@media (max-width: 1020px) {
+
+    .home{
+        /* background-color: rgb(0, 0, 0); */
+        background-image:linear-gradient(360deg,black,rgba(0,0,0,0.7),black), url('/1.jpg');
+        color: aliceblue;
+        width: 100%;
+        padding: 2rem 1rem 2rem;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .home, .present, .present span, .job{
+        font-size: 110%;
+    }
+     .accueil, .accueil span{
+        font-size: 250%;
+     }
+
+    .home-photo{
+        width: 100%;
+        /* position: relative; */
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+    .photo-bloc{
+        width: 70%;
+        height: 70%;
+        overflow: hidden;
+        border-radius: 2rem;
+    }
+
+    .photo-bloc img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* object-position: center; */
+    }
+
+    .button{
+    
+    width: 10rem;
+    height: 2rem;
+    font-size: .8rem;
+    
+}
+}
+
+@media (max-width: 800px){
+
+    .home{
+        font-size:100%;
+    }
+    
+    .photo-bloc{
+        width: 60%;
+        height: 60%;
+        
+        border-radius:2rem;
+}
+}

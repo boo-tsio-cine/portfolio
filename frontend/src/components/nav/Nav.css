@@ -1,0 +1,71 @@
+*{
+    font-size: 100%;
+}
+
+nav{
+    background-color: black;
+    
+}
+
+.navfixed{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+@font-face {
+    font-family: "Bell";
+    src: url("/fonts/BELL.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "comic";
+    src: url("/fonts/BELLI.TTF") format("truetype");
+}
+/* @font-face {
+    font-family: "Bell";
+    src: url("/fonts/BELL.TTF") format("truetype");
+}
+@font-face {
+    font-family: "Bell";
+    src: url("/fonts/BELL.TTF") format("truetype");
+} */
+
+a{
+    text-decoration: none;
+    color: aqua;
+     font-family: "comic", sans-serif;
+     font-size: 1.5rem;
+}
+
+ul{
+    gap: 2rem;
+}
+
+.logon .linko{
+    text-decoration: none;
+    font-size: 2rem;
+    color: aqua;
+    
+}
+
+
+@media (max-width: 1020px){
+    nav{
+        font-size: 100%;
+    }
+
+    .linko{
+        font-size: 100%;
+    }
+
+    .nav-item{
+        margin-bottom: 0;
+    }
+}
+
+/* 
+@media (min-width: 768px){
+   
+} */
